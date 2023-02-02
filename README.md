@@ -28,7 +28,7 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Vet Clinic\] ](#-vet-clinic-)
+- [📖 Vet Clinic ](#-vet-clinic-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -48,19 +48,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 Vet Clinic <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[Vet Clinic]** is a databse for a vetinary clinic for keeping records of animal, built with Postgresql
+**Vet Clinic** is a databse for a vetinary clinic for keeping records of animal, built with Postgresql
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
-<details>
+<!-- <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
@@ -72,7 +70,7 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
-</details>
+</details> -->
 
 <details>
 <summary>Database</summary>
@@ -85,10 +83,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[Create animals table]**
-- **[Add data to animals table]**
+- **Create animals table**
+- **Add data to animals table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,7 +218,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project...
 
