@@ -1,4 +1,17 @@
--- /* Populate database with sample data. */
+/* Populate database with sample data. */
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES('Agumon', '2022-02-03', 0, true, 10.2);
+
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES('Gaumon', '2021-01-07', 2, true, 8.0);
+
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES('Pikachu', '2021-01-07', 1, false, 15.04);
+
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
+VALUES('Devimon', '2017-05-12', 5, true, 11.0);
+
+-- new data
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES('Charmander', '2020-02-08', 0, false, -11.0);
 

@@ -1,44 +1,27 @@
--- /*Queries that provide answers to the questions from all projects.*/
 
--- SELECT * from animals WHERE name LIKE '%mon%';
-
--- SELECT name FROM animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-12-31';
-
--- SELECT name FROM animals WHERE neutered = true and escape_attempts < 3;
-
--- SELECT date_of_birth from animals WHERE name = 'Agumon' OR name = 'Pikachu';
-
--- SELECT name, escape_attempts from animals WHERE weight_kg > 10.5;
-
--- SELECT * from animals WHERE neutered = true;
-
--- SELECT * from animals WHERE name != 'Gabumon';
-
--- SELECT * FROM animals WHERE weight_kg >= 10.4 and weight_kg <= 17.3;
-
-
-BEGIN;
-
+-- update the animals table by setting the species column to unspecified
+BEGIN TRANSACTION;
 UPDATE animals SET species = 'unspecified';
-
-select * from animals where species = 'unspecified';
+SELECT * FROM animals WHERE species = 'unspecified';
 
 ROLLBACK;
-
-select * from animals where species = 'unspecified';
-
+SELECT * FROM animals FROM species = 'unspecified';
 
 
+-- update the species field to be digimon and pokemon
 BEGIN TRANSACTION;
 UPDATE animals
 SET species = 'digimon' where name LIKE '%mon%';
 
 UPDATE animals 
 SET species = 'pokemon'
-WHERE species IS NULL
+WHERE species IS NULL;
 
+SELECT * FROM animals;
 COMMIT;
 
+
+-- 
 BEGIN TRANSACTION;
 DELETE FROM animals;
 
@@ -48,7 +31,7 @@ ROLLBACK;
 
 select * from animals;
 
-
+-- a transaction to delete, create a savepoint and update
 BEGIN TRANSACTION;
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 
@@ -65,16 +48,18 @@ COMMIT;
 
 select * from animals;
 
+
+
 -- query to count the number of animals
 SELECT count(*) FROM animals;
 
 -- calculate the average weith of animals
-select avg(*) from animals
+select avg(weight_kg) from animals
 
 -- calculate the number of animals that never tried escaping
 SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
 
--- the average height of animals
+-- the average weight of animals
 SELECT AVG(weight_kg) FROM animals;
 
 -- who escaped the most, neutered or not neutered animals;
